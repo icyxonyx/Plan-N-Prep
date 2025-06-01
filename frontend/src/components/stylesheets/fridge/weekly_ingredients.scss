@@ -1,0 +1,155 @@
+.weekly-ingredients-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // height: 700px;
+  height: 90vh;
+  width: 100%;
+  padding-top: 50px;
+
+  color: white;
+  font-family: Open Sans;
+
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 14px;
+  }
+
+  .catagory-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .catagory-list {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 20px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-wrap: wrap;
+    // -ms-overflow-style: none; 
+    // scrollbar-width: none;
+    .weekly-loading {
+      margin-left: -20px;
+    }
+
+    .weekly-catagory {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .weekly-catagory-title {
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        font-size: 14px;
+        font-family: Open Sans;
+        line-height: 25px;
+        color: black;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.393);
+
+        .weekly-catagory-arrow {
+          margin-left: 10px;
+          font-size: 11px;
+        }
+        
+      }
+
+      .weekly-catagory-ul {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+      }
+    }
+
+    .weekly-ingredients-item {
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+      animation: FadeIn 1s;
+      position: relative;
+      cursor: pointer;
+      
+      .weekly-ing-checkbox {
+        margin-left: 20px;
+        font-size: 22px;
+        
+      }
+
+      .checked {
+        color: rgba(17, 126, 17, 0.598);
+      }
+
+      .weekly-ing-box {
+        min-height: 38px;
+        width: 70%;
+        margin: 10px 15px;
+        background-color: white;
+        // box-shadow: 1px 1px 4px 1px #91919179;
+        color: black;
+        border-radius: 4px;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 100;
+        animation-fill-mode: both;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .weekly-ing-image-container {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+      }
+
+      .weekly-ing-image {
+        height: 30px;
+        width: 30px;
+        margin-left: 20px;
+      }
+
+      .weekly-ing-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: right;
+        margin-right: 20px;
+      }
+
+      .weekly-ing-name {
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+
+      .weekly-item-amount {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-size: 11px;
+
+        div {
+          margin-left: 5px;
+        }
+      }
+
+    }
+    
+    .have {
+      color: green;
+    }
+    
+    .dont {
+      color: red;
+    }
+  }
+}

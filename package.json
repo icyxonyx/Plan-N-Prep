@@ -1,0 +1,45 @@
+{
+  "name": "plannprep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "server:debug": "node --inspect app.js",
+    "server": "nodemon app.js",
+    "start": "node app.js",
+    "frontend-install": "npm install --prefix frontend",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run frontend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.3",
+    "concurrently": "^9.0.1",
+    "connect-timeout": "^1.9.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "material-ui": "^0.20.2",
+    "mongoose": "^8.6.2",
+    "nodemailer": "^6.9.15",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "react-minimal-pie-chart": "^8.4.0",
+    "react-toggle": "^4.1.3",
+    "sass": "^1.78.0",
+    "validator": "^13.12.0",
+    "victory": "^37.1.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "",
+    "nodemon": "^3.1.4"
+  }
+}

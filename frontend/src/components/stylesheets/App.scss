@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+// reset file
+@import './reset.scss';
+
+// main page
+@import './main/main.scss';
+
+// main page page 3
+
+@import './main/main_recipe_index.scss';
+
+// login page
+
+@import './session/login.scss';
+
+// modal
+
+@import './modal/modal.scss';
+
+// main top index page
+
+@import './main_index/top_index.scss';
+
+// main right index page
+
+@import './main_index/right_index.scss';
+
+// main left index page
+
+@import './main_index/left_index.scss';
+
+// sidebar - first and second
+
+@import './modal/sidebar.scss';
+
+// fridge
+
+@import './fridge/fridge.scss';
+@import './fridge/weekly_ingredients.scss';
+
+// profile
+
+@import './profile/profile.scss';
+
+// weekly_nutrition
+
+@import './weekly_cart/weekly_cart.scss';
+@import './weekly_cart/weekly_cart_day.scss';
+@import './weekly_cart/weekly_cart_nutrition.scss';
+@import './weekly_cart/weekly_macro.scss';
+
+
+
+
+
+

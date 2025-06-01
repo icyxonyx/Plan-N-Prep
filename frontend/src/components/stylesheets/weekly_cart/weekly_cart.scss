@@ -1,0 +1,135 @@
+.weekly-cart-page {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.weekly-cart-info {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.weekly-cart-days {
+  height: 100%;
+  width: 960px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  padding-left: 4%;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+}
+
+.weekly-cart-details {
+  height: 100%;
+  width: calc(100% - 900px);
+  min-width: 840px;
+  padding-left: 100px;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.weekly-cart-data {
+  height: 840px;
+  width: calc(100% - 230px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.weekly-cart-times {
+  display: flex;
+  justify-content: center;
+  padding-left: 60px;
+  margin-bottom: 8px;
+
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 15.5px;
+  letter-spacing: 1px;
+
+  width: 100%;
+
+  div {
+    width: 280px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .weekly-cart-info {
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .weekly-cart-days {
+    height: auto;
+    width: 100%;
+    .weekly-cart-day {
+      margin: 0;
+    }
+  }
+
+
+  .weekly-cart-details {
+    height: auto;
+    width: 75%;
+    padding: 0;
+
+    justify-content: space-between;
+    padding-left: 200px;
+  }
+
+  .weekly-cart-times {
+    div {
+      width: 350px;
+    }
+  }
+}
+
+// .weekly-cart-divider {
+//   align-self: flex-end;
+
+//   margin-right: 30px;
+
+//   width: 88%;
+//   height: 1px;
+//   border: 1px solid gray;
+// }
+
+// @KELLY: should we also add a custom scrollbar to the index?
+// .weekly-cart-days::-webkit-scrollbar {
+//   width: 5px;
+//   // display: none;
+// }
+
+// .weekly-cart-days::-webkit-scrollbar-track {
+//   background: rgba(173, 174, 230, 0.5);
+// }
+
+// .weekly-cart-days::-webkit-scrollbar-thumb {
+//   background: rgb(173, 174, 230);
+//   width: 5px;
+//   // border: 1px black solid;
+//   // border-radius: 2px;
+// }
