@@ -115,7 +115,7 @@ Full-stack meal-planning, nutrition-tracking, and grocery-management application
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/yourusername/PlanNPrep.git
+   git clone https://github.com/icyxonyx/PlanNPrep.git
    cd PlanNPrep/PlanNPrep
    ```
 
