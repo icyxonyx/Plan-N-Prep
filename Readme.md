@@ -1,5 +1,5 @@
 **Plan N Prep** 🍽️
-Full-stack meal-planning, nutrition-tracking, and grocery-management application built with Node.js, Express, MongoDB, and React. Users can sign up (including personal details like aadhar, height, weight, age, gender, activity level, weekly calorie target), maintain a virtual fridge inventory, search and save recipes via the Spoonacular API, plan meals on a date-based calendar (breakfast/lunch/dinner), track meal status, and send custom ingredient lists to their email. 📧🛒
+Full-stack meal-planning, nutrition-tracking, and grocery-management application built with Node.js, Express, MongoDB, and React. Users can sign up (including personal details like height, weight, age, gender, activity level, weekly calorie target), maintain a virtual fridge inventory, search and save recipes via the Spoonacular API, plan meals on a date-based calendar (breakfast/lunch/dinner), track meal status, and send custom ingredient lists to their email. 📧🛒
 
 ---
 
@@ -209,7 +209,7 @@ PlanNPrep/
 │   ├── cart.js                # Meal-planner “cart” schema (dates → meals & status)
 │   ├── fridge.js              # Fridge schema (ingredients object)
 │   ├── Recipe.js              # Saved recipe schema (Spoonacular fields)
-│   └── user.js                # User schema (profile + aadhar + auth)
+│   └── user.js                # User schema (profile + auth)
 │
 ├── routes/
 │   └── api/
